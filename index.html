@@ -6,7 +6,7 @@
 	<title>Jump To Sky - 3D Parcour</title>
     <link rel="shortcut icon" href="TemplateData/img/favicon.ico">
     <link rel="stylesheet" href="TemplateData/css/style.css">
-<!-- Google tag (gtag.js) -->
+	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-YSW25FYN5D"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -14,8 +14,42 @@
 		gtag('js', new Date());
 		gtag('config', 'G-YSW25FYN5D', { cookie_flags: 'SameSite=None;Secure' });
 	</script>
+	<script src="https://www.googleoptimize.com/optimize.js?id=OPT-5424P4N"></script>
 </head>
 <body>
+<script type="text/javascript" >
+	function implementARAB(value) {
+	  if (value == '1') {
+	  if(window.hasOwnProperty('unityInstance') {
+		window.unityInstance.SendMessage('ABTests', 'EnableAlwaysRun');
+	  }
+	  window.sessionStorage.setItem('EnableAlwaysRun', 'true');
+	  }
+	}
+
+	gtag('event', 'optimize.callback', {
+		name: '7PmXktMhTRizXoU1fJE2zA',
+		callback: implementARAB
+	 });
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(90460335, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/90460335" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
 <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
 
 <script type="text/javascript">
@@ -208,11 +242,11 @@
 		var isChrome =  isIOSChrome || (isChromium !== null && typeof isChromium !== "undefined" && vendorName === "Google Inc." && isOpera === false && isIEedge === false);
 		
 		var buildUrl = "Build";
-		var loaderUrl = buildUrl + "/GAB.loader.js";
+		var loaderUrl = buildUrl + "/GAB2.loader.js";
 		var config = {
-        dataUrl: buildUrl + "/GAB.data.unityweb",
-        frameworkUrl: buildUrl + "/GAB.framework.js.unityweb",
-        codeUrl: buildUrl + "/GAB.wasm.unityweb",
+        dataUrl: buildUrl + "/GAB2.data.unityweb",
+        frameworkUrl: buildUrl + "/GAB2.framework.js.unityweb",
+        codeUrl: buildUrl + "/GAB2.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Upreality",
         productName: "Jump To Sky - 3D Parcour",
